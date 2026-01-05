@@ -1,0 +1,136 @@
+.enterprise-platform {
+  padding: 100px 0;
+  background-color: #ffffff;
+}
+
+.enterprise-platform__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #1A1A1A;
+  line-height: 1.2;
+  font-family: var(--font-heading);
+}
+
+.enterprise-platform__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.enterprise-platform__grid::before,
+.enterprise-platform__grid::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: #8B5CF6;
+  opacity: 0.2;
+}
+
+.enterprise-platform__grid::before {
+  left: calc(33.333% - 20px);
+}
+
+.enterprise-platform__grid::after {
+  right: calc(33.333% - 20px);
+}
+
+.enterprise-platform__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.enterprise-platform__column-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1A1A1A;
+  margin-bottom: 24px;
+  font-family: var(--font-heading);
+}
+
+.enterprise-platform__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.enterprise-platform__item {
+  font-size: 1rem;
+  color: #6b7280;
+  line-height: 1.6;
+  position: relative;
+  padding-left: 0;
+}
+
+.enterprise-platform__link {
+  color: #6b7280;
+  text-decoration: underline;
+  text-decoration-color: #8B5CF6;
+  text-underline-offset: 4px;
+  transition: color 0.3s ease;
+}
+
+.enterprise-platform__link:hover {
+  color: #8B5CF6;
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+  .enterprise-platform__grid {
+    gap: 32px;
+  }
+
+  .enterprise-platform__title {
+    font-size: 2rem;
+  }
+
+  .enterprise-platform__grid::before,
+  .enterprise-platform__grid::after {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .enterprise-platform {
+    padding: 60px 0;
+  }
+
+  .enterprise-platform__grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .enterprise-platform__title {
+    font-size: 1.75rem;
+    margin-bottom: 40px;
+  }
+
+  .enterprise-platform__column-title {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .enterprise-platform__title {
+    font-size: 1.5rem;
+    padding: 0 10px;
+  }
+
+  .enterprise-platform__column-title {
+    font-size: 1.125rem;
+  }
+
+  .enterprise-platform__item {
+    font-size: 0.95rem;
+  }
+}
+

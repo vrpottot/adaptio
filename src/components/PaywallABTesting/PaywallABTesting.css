@@ -1,0 +1,195 @@
+.paywall-ab-testing {
+  padding: 100px 0;
+  background-color: #ffffff;
+}
+
+.paywall-ab-testing__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* Левая колонка */
+.paywall-ab-testing__left {
+  display: flex;
+  flex-direction: column;
+}
+
+.paywall-ab-testing__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1A1A1A;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-family: var(--font-heading);
+}
+
+.paywall-ab-testing__description {
+  font-size: 1.125rem;
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.paywall-ab-testing__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #1A1A1A;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 40px;
+  transition: opacity 0.3s ease;
+  text-decoration: none;
+}
+
+.paywall-ab-testing__link:hover {
+  opacity: 0.7;
+}
+
+/* Отзыв клиента */
+.paywall-ab-testing__testimonial {
+  background: #f9fafb;
+  border-radius: 24px;
+  padding: 32px;
+  position: relative;
+}
+
+.paywall-ab-testing__testimonial-quote {
+  font-size: 4rem;
+  color: #ff6b35;
+  font-family: serif;
+  line-height: 1;
+  margin-bottom: 16px;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+}
+
+.paywall-ab-testing__testimonial-header {
+  margin-bottom: 16px;
+  padding-top: 20px;
+}
+
+.paywall-ab-testing__testimonial-logo-text {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1A1A1A;
+  font-family: var(--font-heading);
+}
+
+.paywall-ab-testing__testimonial-text {
+  font-size: 1rem;
+  color: #374151;
+  line-height: 1.7;
+  margin-bottom: 24px;
+  padding-left: 0;
+}
+
+.paywall-ab-testing__testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.paywall-ab-testing__testimonial-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.paywall-ab-testing__testimonial-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.paywall-ab-testing__testimonial-name {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #1a1a1a;
+  margin-bottom: 2px;
+}
+
+.paywall-ab-testing__testimonial-role {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+/* Правая колонка - визуализация */
+.paywall-ab-testing__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paywall-ab-testing__visual {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.paywall-ab-testing__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 24px;
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+  .paywall-ab-testing__grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .paywall-ab-testing__title {
+    font-size: 2rem;
+  }
+
+  .paywall-ab-testing__visual {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .paywall-ab-testing {
+    padding: 60px 0;
+  }
+
+  .paywall-ab-testing__title {
+    font-size: 1.75rem;
+  }
+
+  .paywall-ab-testing__description {
+    font-size: 1rem;
+  }
+
+  .paywall-ab-testing__testimonial {
+    padding: 24px;
+  }
+
+  .paywall-ab-testing__testimonial-quote {
+    font-size: 3rem;
+    top: 20px;
+    left: 20px;
+  }
+
+  .paywall-ab-testing__visual {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .paywall-ab-testing__title {
+    font-size: 1.5rem;
+    padding: 0 10px;
+  }
+
+  .paywall-ab-testing__visual {
+    max-width: 100%;
+  }
+}
+
