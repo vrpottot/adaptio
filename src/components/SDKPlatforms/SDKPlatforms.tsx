@@ -1,6 +1,4 @@
 import './SDKPlatforms.css';
-import Divider from "./Divider";
-import './Divider.css';
 
 interface Platform {
   id: string;
